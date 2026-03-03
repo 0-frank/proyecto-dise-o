@@ -17,8 +17,9 @@ body {
   gap: 8px;
 }
 
-/*Estilo del panel de control*/
 
+
+/*Estilo del panel de control*/
 header nav a{
     text-decoration: none;
     color:black;
@@ -38,6 +39,8 @@ nav {
 nav a{
     display: block;
 }
+
+
 /*Estilos del main*/
 main{
     flex: 1;
