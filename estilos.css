@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Estilo del index*/
+.inicio-sesion form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/*Estilo del panel de control*/
+
+header nav a{
+    text-decoration: none;
+    color:black;
+    transition:0.3s;
+}
+
+header nav a:hover{
+    color:blue;
+
+}
+
+nav {
+    width: 200px;
+    min-height: 100vh;
+}
+
+nav a{
+    display: block;
+}
+/*Estilos del main*/
+main{
+    flex: 1;
+    padding: 20px;
+}
+
+.seccion{
+    display: none;
+}
+
+.seccion:target{
+    display: block;
+}
+
