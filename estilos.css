@@ -55,3 +55,19 @@ main{
     display: block;
 }
 
+
+/*Estilos de editar-articulo*/
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.targeta-articulo{
+        width: 150px;
+    background-color: rgb(219, 250, 95);
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 15px;
+}
