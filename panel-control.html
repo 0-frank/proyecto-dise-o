@@ -14,75 +14,73 @@
             <a href="#nuevo-articulo">Nuevo articulo</a>
             <a href="#baja-articulo">Baja articulo</a>
             <a href="#editar-articulo">Editar articulo</a>
-            <a href="">Cerrar sesion</a>
+            
         </nav>
     </header>
 
     <main>
-        <section>
-            <article id="nuevo-articulo" class="seccion">
-                <form class="anadir-articulo">
-                    <label for="nombre-articulo">Introduce el nombre del articulo</label>
-                    <input type="text" id="nombre-articulo">
-                    <label for="categoria">Selecciona la categoria</label>
-                    <select id="categoria-select">
-                        <option value="herramienta">Herramienta</option>
-                        <option value="material">Materiales</option>
-                    </select>
-                    <button>Añadir</button>
-                </form>
+
+        <section id="nuevo-articulo" class="seccion">
+            <form class="anadir-articulo">
+                <label for="nombre-articulo">Introduce el nombre del articulo</label>
+                <input type="text" id="nombre-articulo">
+                <label for="descripcion">Descripcion del articulo</label>
+                <textarea id="descripcion" rows="5" cols="50"></textarea>
+                <label for="categoria">Selecciona la categoria</label>
+                <select id="categoria-select">
+                    <option value="herramienta">Herramienta</option>
+                    <option value="material">Materiales</option>
+                </select>
+                <input type="file">
+                <button>Añadir </button>
+            </form>
+        </section>
+
+        <section id="baja-articulo" class="seccion">
+            <article class="articulo-baja">
+                <img src="imagenes/martillo.webp">
+                <button class="btn-eliminar">Eliminar</button>
             </article>
+            <article class="articulo-baja">
+                <img src="imagenes/pintura.jpeg">
+                <button class="btn-eliminar">Eliminar</button>
+            </article>
+            <article class="articulo-baja">
+                <img src="imagenes/rodillo.jpeg">
+                <button class="btn-eliminar">Eliminar</button>
+            </article>
+        </section>
 
-            <article id="baja-articulo" class="seccion">
-                <div class="articulo-baja">
-                    <img src="imagenes/martillo.webp">
-                    <button class="btn-eliminar">Eliminar</button>
-                </div>
-
-                <div class="articulo-baja">
-                    <img src="imagenes/pintura.jpeg">
-                    <button class="btn-eliminar">Eliminar</button>
-                </div>
-
-                <div class="articulo-baja">
-                    <img src="imagenes/rodillo.jpeg">
-                    <button class="btn-eliminar">Eliminar</button>
+        <section id="editar-articulo" class="seccion">
+            <article class="editar-targeta">
+                <img src="imagenes/martillo.webp">
+                <div class="informacion-articulo">
+                    <h2>Martillo</h2>
+                    <p>Herramienta de mano ideal para clavar, extraer clavos y trabajos de construcción. Mango
+                        ergonómico y cabeza de acero resistente</p>
+                    <button class="btn-editar"><a href="editar.html">Editar</a></button>
                 </div>
             </article>
-
-            <article id="editar-articulo" class="seccion">
-                <div class="editar-targeta">
-                    <img src="imagenes/martillo.webp">
-                    <div class="informacion-articulo">
-                        <h1>Martillo</h1>
-                        <p>Herramienta de mano ideal para clavar, extraer clavos y trabajos de construcción. Mango
-                            ergonómico y cabeza de acero resistente</p>
-                        <button class="btn-editar"><a href="editar.html">Editar</a></button>
-                    </div>
+            <article class="editar-targeta">
+                <img src="imagenes/pintura.jpeg">
+                <div class="informacion-articulo">
+                    <h2>Pintura cris</h2>
+                    <p>Pintura de alta cobertura para interiores y exteriores. Disponible en una amplia gama de colores,
+                        acabado duradero y de fácil aplicación.</p>
+                    <button class="btn-editar"><a href="editar.html">Editar</a></button>
                 </div>
-
-                <div class="editar-targeta">
-                    <img src="imagenes/pintura.jpeg">
-                    <div class="informacion-articulo">
-                        <h1>Pintura cris</h1>
-                        <p>Pintura de alta cobertura para interiores y exteriores. Disponible en una amplia gama de
-                            colores,
-                            acabado duradero y de fácil aplicación.</p>
-                        <button class="btn-editar"><a href="editar.html">Editar</a></button>
-                    </div>
-                </div>
-
-                <div class="editar-targeta">
-                    <img src="imagenes/rodillo.jpeg">
-                    <div class="informacion-articulo">
-                        <h1>Rodillo</h1>
-                        <p>Accesorio esencial para pintar superficies grandes de forma rápida y uniforme. Proporciona un
-                            acabado liso y profesional.</p>
-                        <button class="btn-editar"><a href="editar.html">Editar</a></button>
-                    </div>
+            </article>
+            <article class="editar-targeta">
+                <img src="imagenes/rodillo.jpeg">
+                <div class="informacion-articulo">
+                    <h2>Rodillo</h2>
+                    <p>Accesorio esencial para pintar superficies grandes de forma rápida y uniforme. Proporciona un
+                        acabado liso y profesional.</p>
+                    <button class="btn-editar"><a href="editar.html">Editar</a></button>
                 </div>
             </article>
         </section>
+
     </main>
     <footer>
 

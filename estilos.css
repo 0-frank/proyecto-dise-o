@@ -7,9 +7,8 @@
 body {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 /*Estilo del index*/
 .inicio-sesion form {
   display: flex;
@@ -17,57 +16,189 @@ body {
   gap: 8px;
 }
 
-
-
 /*Estilo del panel de control*/
-header nav a{
-    text-decoration: none;
-    color:black;
-    transition:0.3s;
+header {
+  background-color: #2c3e50;
+  min-height: 100vh;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-header nav a:hover{
-    color:blue;
-
+header nav a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
-nav {
-    width: 200px;
-    min-height: 100vh;
+header nav a:hover {
+  background-color: #3d5166;
 }
 
-nav a{
-    display: block;
+nav a {
+  display: block;
 }
-
 
 /*Estilos del main*/
-main{
-    flex: 1;
-    padding: 20px;
+main {
+  flex: 1;
+  padding: 20px;
 }
 
-.seccion{
-    display: none;
+/*Estilos de las opciones*/
+.seccion {
+  display: none;
 }
 
-.seccion:target{
-    display: block;
+.seccion:target {
+  display: block;
 }
 
+/*Estilos de nuevo-articulo*/
+.anadir-articulo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  background: #f9f9f9;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-/*Estilos de editar-articulo*/
+.anadir-articulo label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.anadir-articulo input,
+.anadir-articulo select,
+.anadir-articulo textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  resize: vertical;
+}
+
+.anadir-articulo input:focus,
+.anadir-articulo select:focus,
+.anadir-articulo textarea:focus {
+  border-color: #2c3e50;
+}
+
+.anadir-articulo button {
+  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.anadir-articulo button:hover {
+  background-color: #3d5166;
+}
+
+/*Estilos de baja-articulo*/
+#baja-articulo:target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.articulo-baja {
+  width: 30%;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-eliminar {
+  width: 100%;
+  padding: 8px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.btn-eliminar:hover {
+  background-color: #c0392b;
+}
 
 img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
-.targeta-articulo{
-        width: 150px;
-    background-color: rgb(219, 250, 95);
-    border: 1px solid black;
-    display: inline-block;
-    border-radius: 15px;
+/*Estilos de editar-articulo*/
+#editar-articulo:target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.editar-targeta {
+  width: 30%;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.informacion-articulo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.informacion-articulo h2 {
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.informacion-articulo p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.btn-editar {
+  padding: 8px;
+  background-color: #2c3e50;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-editar a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn-editar:hover {
+  background-color: #3d5166;
 }
