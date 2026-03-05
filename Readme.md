@@ -1,6 +1,9 @@
 # Gestion de inventario
 ## Descripción
-Una explicación breve (2 o 3 párrafos) sobre la idea del proyecto. ¿Qué es? ¿A quién va
+Una explicación breve (2 o 3 párrafos) sobre la idea del proyecto.
+
+El proyecto va de una aplicacion que ayude a gestionar el inventario de pequeños y medianas empresas. Y ayudar a reducir costes.
+ ¿Qué es? ¿A quién va
 dirigido? ¿Qué problema intenta solucionar o qué necesidad cubre?
 ## Estructura del Prototipo
 Explicación de las vistas creadas y cómo se navega entre ellas.
@@ -15,8 +18,8 @@ En este archivo editamos el articulo seleccionado, podemos cambiar el precio, .
 * CSS3
 ## Enfoque Técnico
 Breve resumen de cómo se ha planteado el desarrollo:
-* Diseño Mobile First.
 * Uso de selectores básicos y combinados.
 * Uso de diferentes valores de Display y Position.
 ## Autor
 * **Nombre del alumno** - [Enlace a perfil de GitHub o LinkedIn]
+  https://github.com/0-frank
