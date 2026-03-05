@@ -5,15 +5,30 @@
 }
 
 body {
-  min-height: 100vh;
   display: flex;
 }
 
 /*Estilo del index*/
+
+#form-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.inicio-sesion form {
+  min-width: 350px;
+}
+
 .inicio-sesion form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: center;
+  gap: 12px;
+
+  border-radius: 10px;
 }
 
 /*Estilo del panel de control*/
